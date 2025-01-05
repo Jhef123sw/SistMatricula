@@ -1,0 +1,101 @@
+:root {
+    --main-bg-color: #555;
+    --main-text-color: #AAA;
+    --header-bg-color: rgba(60, 60, 180, 0.8);
+    --link-bg-color: #D23D15;
+    --link-hover-bg-color: white;
+    --link-hover-text-color: black;
+    --border-color: #000;
+}
+
+body {
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+header {
+    background: var(--header-bg-color);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+
+header h1 {
+    text-shadow: rgba(255, 0, 0, 0.5) 5px 5px 10px;
+}
+
+header h2 {
+    font-weight: normal;
+    text-shadow: rgba(0, 0, 0, 0.75) 2px 2px 5px;
+}
+
+nav {
+    margin: -5px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    background: var(--link-bg-color);
+    border-radius: 0.5em;
+    color: white;
+    margin: 0 1em 0 0;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+nav li a:hover {
+    background: var(--link-hover-bg-color);
+    color: var(--link-hover-text-color);
+    transform: rotate(5deg) scale(1.2);
+}
+
+#contenido, #subtitulo {
+    background: white;
+    color: black;
+    border-radius: 0.5em;
+    border: 5px solid var(--border-color);
+    margin: 2px;
+    text-decoration: none;
+    width: 100%;
+}
+
+#subtitulo {
+    text-shadow: -3px 5px 4px #777;
+    color: #004080;
+}
+
+.lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista li {
+    margin: 2px;
+    padding: 3px;
+}
+
+.lista li a {
+    background: white;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.lista li a:hover {
+    color: red;
+    transform: scale(1.2);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/elicia.css' %}">  
+    <script type="text/javascript" src="prefixfree.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <hgroup id="logo">   
+        <h1>Sistema de Matriculas</h1>
+        <h2>Informatica UNC</h2>
+    </hgroup>   
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <form method="POST" class="login-form">
+                {% csrf_token %}
+                <h2 class="form-title">Acceso</h2>
+                <input type="text" name="username" class="form-input" placeholder="Usuario">
+                <input type="password" name="password" class="form-input" placeholder="Contraseña">
+                <button type="submit" class="form-button">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+</body>
+<footer> Copyright © 2024 Oficina de Tecnologías de Información. Derechos Reservados.</footer>
+</html>

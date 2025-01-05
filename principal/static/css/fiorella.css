@@ -1,0 +1,43 @@
+body {
+    background-color: #222;
+    color: #EEE;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.5; /* Mejora la legibilidad */
+}
+
+header {
+    background: url("{% static 'img/Fondo.png' %}") no-repeat center center;
+    background-size: cover; /* Asegura que la imagen cubra el área del header */
+    background-color: #333; /* Respaldo si la imagen no carga */
+    margin: 0;
+    padding: 1em 0; /* Espaciado uniforme */
+    width: 100%;
+    color: #FFF; /* Asegura que el texto del header sea legible */
+}
+
+header h1 {
+    margin: 0;
+    text-shadow: rgba(255, 255, 255, 0.5) 5px 5px 10px;
+    font-size: 2.5rem; /* Ajusta el tamaño del texto */
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal; /* Quita la negrita */
+    text-shadow: rgba(255, 0, 0, 0.7) 2px 2px 5px;
+    font-size: 1.5rem; /* Tamaño más pequeño que h1 */
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+}
